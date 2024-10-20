@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+.info{
+    width: 650px;
+    text-align: center;
+    background-color: aqua;
+    border: 3px solid black;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 25px auto;
+    font-size: 32px;
+}
+
+.info span{
+    color: darkgoldenrod;
+    font-size: 37px;
+    letter-spacing: -1px;
+}
+.game-blocks{
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.game-blocks .block{
+    width: calc(100% / 3 - 30px);
+    height: 176px;
+    background-color: aqua;
+    border: 3px solid black;
+    text-align: center;
+    line-height: 176px;
+    font-size: 85px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: 1s;
+    color: white;
+
+}
+.game-blocks .block:hover , 
+.game-blocks .block.clicked /*هاي عشان بعد ما اختار اكس او او يتحول اسود عطول*/ 
+{
+    background-color: black;
+}
